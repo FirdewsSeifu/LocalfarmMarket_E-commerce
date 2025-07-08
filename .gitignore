@@ -1,0 +1,13 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Build files
+LocalFarmMarket-frontend/build/
+LocalFarmMarket-frontend/dist/
+
+# Logs
+logs
+*.log

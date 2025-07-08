@@ -1,0 +1,170 @@
+/* Dashboard container styles */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    width: 280px;
+    background-color: #006400;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  /* Sidebar title style */
+  .sidebar-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #374151;
+  }
+  
+  /* Sidebar navigation styles */
+  .sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  /* Sidebar navigation links styles */
+  .sidebar-nav a {
+    color: #e5e7eb; /* Light text color for dark background */
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+  
+  /* Hover effect on sidebar links */
+  .sidebar-nav a:hover {
+    background-color: #004400;
+    color: white;
+  }
+  
+  /* Active state for sidebar links */
+  .sidebar-nav a.active {
+    background-color: #004400;
+    color: white;
+  }
+  
+  /* Main dashboard container styles */
+  .dashboard-main {
+    margin-top: 100px;
+    flex-grow: 1;
+    margin-left: 280px;
+    padding: 30px;
+    background-color: #f9fafb;
+    min-height: 100vh;
+    color: #374151; /* Ensure text is dark enough for readability */
+  }
+  
+  /* Table styles */
+  .table-auto {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Table header styles */
+  .table-auto th {
+    text-align: left;
+    padding: 12px 16px;
+    background-color: #f3f4f6;
+    font-weight: 600;
+    color: #374151; /* Dark text color for table headers */
+  }
+  
+  /* Table cell styles */
+  .table-auto td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  /* Button styles */
+  .btn {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  /* Blue button styles */
+  .btn-blue {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+  }
+  
+  /* Blue button hover effect */
+  .btn-blue:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Red button styles */
+  .btn-red {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+  }
+  
+  /* Red button hover effect */
+  .btn-red:hover {
+    background-color: #dc2626;
+  }
+  
+  /* Form input styles */
+  .form-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #374151; /* Dark text color for inputs */
+  }
+  
+  /* Focused input field styles */
+  .form-input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  }
+  
+  /* Card styles */
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: #374151; /* Ensure text inside cards is visible */
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      position: static;
+      height: auto;
+    }
+  
+    .dashboard-main {
+      margin-left: 0;
+      padding: 20px;
+    }
+  }
+  

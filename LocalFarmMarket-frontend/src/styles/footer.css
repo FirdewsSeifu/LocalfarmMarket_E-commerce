@@ -1,0 +1,142 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px; /* Reduced padding for a more compact footer */
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+.footer .contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0px; /* Reduced gap to make sections closer */
+}
+
+.footer .companydescription {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.footer .companydescription .logo h1 {
+    font-size: 36px;
+    margin-bottom: 10px; /* Reduced bottom margin */
+    color: #28a745; /* Green color for the logo */
+    letter-spacing: 1px;
+}
+
+.footer .companydescription .text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #dcdcdc;
+}
+
+.footer .companydescription .text p {
+    margin-bottom: 15px;
+}
+
+.footer .company {
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+.footer .company h2 {
+    font-size: 18px;
+    margin-bottom: 10px; /* Reduced bottom margin */
+    color: #28a745; /* Green color for headers */
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.footer .company ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .company ul li {
+    margin: 8px 0; /* Reduced margin between list items */
+}
+
+.footer .company ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer .company ul li a:hover {
+    color: #28a745; /* Green color on hover */
+}
+
+.footer .contact-info {
+    margin-top: -18px;
+}
+
+.footer .contact-info h2 {
+    font-size: 18px;
+    margin-bottom: 10px; /* Reduced bottom margin */
+    color: #28a745; /* Green color for headers */
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.footer .contact-info .text {
+    margin-top: -60px;
+}
+
+.footer .contact-info .text p {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 5px; /* Add space between lines */
+}
+
+.footer .media {
+    width: 15%;
+    margin-bottom: 20px;
+}
+
+.footer .media h2 {
+    font-size: 18px;
+    margin-bottom: 10px; /* Reduced bottom margin */
+    color: #28a745;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.footer .media-buttons a {
+    font-size: 30px;
+    margin-right: 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer .media-buttons a:hover {
+    color: #28a745; /* Green color on hover */
+}
+
+.footer .copy {
+    text-align: center;
+    font-size: 14px;
+    color: #dcdcdc;
+    margin-top: 20px; /* Reduced top margin */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer .contact {
+        flex-direction: column; /* Stack the footer content on smaller screens */
+        align-items: center;
+    }
+
+    .footer .companydescription,
+    .footer .company,
+    .footer .contact-info,
+    .footer .media {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer .company ul li a {
+        font-size: 16px; /* Increase font size on mobile */
+    }
+}

@@ -1,0 +1,245 @@
+/* Login.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Loading Container */
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+/* Error Message */
+.error-message {
+    color: #e74c3c;
+    background-color: #fadbd8;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Login Card Container */
+.login-card {
+    display: flex;
+    width: 800px;
+    height: 500px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Image Section */
+.image {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image .logo {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo h1 {
+    font-size: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    color: green;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo h1:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.image .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/farm.jpg') no-repeat center center/cover;
+    z-index: 1;
+}
+
+/* Login Form Section */
+.login-form {
+    flex: 1;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.login-form h2 {
+    font-size: 28px;
+    color: #2e8b57;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.login-form p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.login-form p span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2e8b57;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 24px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+    border-color: #2e8b57;
+}
+
+.login-form input[disabled] {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+}
+
+.login-form .forgot {
+    display: block;
+    text-align: right;
+    margin: 10px 0 20px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #2e8b57;
+    transition: color 0.3s ease;
+}
+
+.login-form .forgot:hover {
+    color: #1e6b47;
+    text-decoration: underline;
+}
+
+.login-form .login-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 24px;
+    background-color: #2e8b57;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.login-form .login-btn:hover {
+    background-color: #1e6b47;
+}
+
+.login-form .login-btn:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+
+.login-form .signup {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.login-form .signup a {
+    color: #2e8b57;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.login-form .signup a:hover {
+    color: #1e6b47;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 850px) {
+    .login-card {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .image {
+        height: 200px;
+    }
+    
+    .logo h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-form {
+        padding: 30px 20px;
+    }
+    
+    .login-form h2 {
+        font-size: 24px;
+    }
+    
+    .login-form p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+}

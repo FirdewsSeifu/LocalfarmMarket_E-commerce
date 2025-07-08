@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* General Styles */
+.container {
+  font-family: 'Poppins', sans-serif;
+  background-color: gray;
+}
+
+.container img {
+  border-radius: 15px;
+}
+
+.container h2 {
+  color: green;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Hero Section */
+.container .about-text {
+  position: relative;
+  z-index: 1;
+}
+
+.container .about-text h1 {
+  text-align: center;
+  color: green;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin-top: 100px;
+}
+
+/* Who Are We & Our Story Sections */
+.who-are-we, 
+.our-story {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  flex-wrap: wrap;
+  background-color: rgb(200, 192, 192);
+  margin: 40px 20px;
+  border-radius: 15px;
+}
+
+.who-are-we .content, 
+.our-story .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.who-are-we .image, 
+.our-story .image {
+  flex: 1;
+}
+
+.who-are-we .text, 
+.our-story .text {
+  flex: 1;
+}
+
+.who-are-we img, 
+.our-story img {
+  max-width: 100%;
+  height: auto;
+}
+
+.who-are-we p, 
+.our-story details, 
+.our-story summary {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Gallery Section */
+.gallery {
+  padding: 50px;
+  text-align: center;
+  background-color: rgb(200, 192, 192);
+  margin: 40px 20px;
+  border-radius: 15px;
+}
+
+.gallery h2 {
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: green;
+}
+
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.gallery-images img {
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+}
+
+/* Our Story Details */
+.our-story .story-content {
+  width: 100%;
+}
+
+.our-story .toggle-details {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin: 15px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.our-story .toggle-details:hover {
+  background-color: darkgreen;
+}
+
+.our-story .details-content {
+  margin-top: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .who-are-we, 
+  .our-story {
+    flex-direction: column;
+    padding: 30px;
+    margin: 30px 15px;
+  }
+
+  .who-are-we .content, 
+  .our-story .content {
+    flex-direction: column;
+  }
+
+  .about-hero .about-text h1 {
+    font-size: 48px;
+    margin-top: 30px;
+  }
+
+  .gallery {
+    padding: 30px;
+    margin: 30px 15px;
+  }
+
+  .gallery-images img {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero .about-text h1 {
+    font-size: 36px;
+  }
+
+  .who-are-we, 
+  .our-story {
+    padding: 20px;
+    margin: 20px 10px;
+  }
+
+  .gallery {
+    padding: 20px;
+    margin: 20px 10px;
+  }
+}

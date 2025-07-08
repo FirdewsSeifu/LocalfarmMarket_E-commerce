@@ -1,0 +1,72 @@
+.seller-orders {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  .orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 128, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .orders-table th,
+  .orders-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #d0e8d0;
+  }
+  
+  .orders-table th {
+    background: #e8f5e9;
+    font-weight: 600;
+    color: #2e7d32;
+  }
+  
+  .orders-table tr:hover {
+    background: #f1f8e9;
+  }
+  
+  .orders-table select {
+    padding: 0.5rem;
+    border: 1px solid #a5d6a7;
+    border-radius: 4px;
+    background: #ffffff;
+    color: #2e7d32;
+  }
+  
+  .orders-table select:disabled {
+    background: #f1f8e9;
+    color: #888;
+  }
+  
+  .view-btn {
+    padding: 0.5rem 1rem;
+    background: #c8e6c9;
+    border-radius: 4px;
+    color: #2e7d32;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    transition: background 0.2s ease;
+  }
+  
+  .view-btn:hover {
+    background: #a5d6a7;
+  }
+  
+  .loading,
+  .error {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.1rem;
+  }
+  
+  .error {
+    color: #c62828;
+  }
+  
