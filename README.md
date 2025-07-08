@@ -131,8 +131,8 @@ For questions, suggestions, or collaboration:
 
 **Hikma Oumer Esmail**  
 📍 Addis Ababa, Ethiopia  
-📩 --  
-🔗 [LinkedIn](--)
+📩 hikuoumer@gmail.com 
+🔗 [LinkedIn](https://www.linkedin.com/in/hikma-oumer-749722262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
 
 **Nawal Mohammed Eshetu**  
 📍 Addis Ababa, Ethiopia  
