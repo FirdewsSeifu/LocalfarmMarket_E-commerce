@@ -23,9 +23,6 @@ A full-stack eCommerce web application developed collaboratively by a group of f
 - 🛠️ Admin dashboard for managing:
   - Products
   - Users
-  - Blogs
-  - Events
-  - Reviews & messages
 - 💬 Customer review system
 - 🧑‍🌾 Designed with Tailwind CSS and mobile responsiveness
 - 🔐 JWT authentication and role-based access control
@@ -126,8 +123,8 @@ For questions, suggestions, or collaboration:
 
 **Eman Berdu Kemal**  
 📍 Addis Ababa, Ethiopia  
-📩 --  
-🔗 [LinkedIn](--)
+📩 emnn788@gmail.com
+🔗 [LinkedIn](https://www.linkedin.com/in/eman-bedru-83596a304)
 
 **Hikma Oumer Esmail**  
 📍 Addis Ababa, Ethiopia  
