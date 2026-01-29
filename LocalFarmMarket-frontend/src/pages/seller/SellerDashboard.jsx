@@ -1,7 +1,7 @@
 // client/src/pages/seller/SellerDashboard.js
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
+import api from '../../api';
 
 const SellerDashboard = () => {
   const [stats, setStats] = useState({
@@ -17,14 +17,7 @@ const SellerDashboard = () => {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const response = await axios.get(
-          'http://localhost:5001/api/seller/dashboard-stats',
-          {
-            headers: {
-              Authorization: `Bearer ${localStorage.getItem('token')}`,
-            },
-          }
-        );
+        const response = await api.get('/api/seller/dashboard-stats');
         setStats(response.data);
       } catch (error) {
         toast.error('Failed to fetch dashboard stats');

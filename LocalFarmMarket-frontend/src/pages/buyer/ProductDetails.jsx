@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useCart } from "../../context/CartContext";
+import api from "../../api";
 import "../../styles/ProductDetails.css";
 
 const ProductDetails = () => {
@@ -14,25 +15,24 @@ const ProductDetails = () => {
   const [reviewInput, setReviewInput] = useState("");
   const [ratingInput, setRatingInput] = useState(5);
 
-    useEffect(() => {
-      const fetchProduct = async () => {
-        try {
-          const response = await fetch(`http://localhost:5001/api/products/${id}`);
-          if (!response.ok) throw new Error("Product not found");
-          const data = await response.json();
-          setProduct(data);
-          setReviews(data.reviews || []);
-        } catch (err) {
-          setError(err.message);
-        } finally {
-          setLoading(false);
-        }
-      };
-      fetchProduct();
-    }, [id]);
+  useEffect(() => {
+    const fetchProduct = async () => {
+      try {
+        const response = await api.get(`/api/products/${id}`);
+        const data = response.data;
+        setProduct(data);
+        setReviews(data.reviews || []);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchProduct();
+  }, [id]);
 
   const handleAddToCart = () => {
-     console.log('Product being added to cart:', product);
+    console.log('Product being added to cart:', product);
     addToCart({ ...product, quantity });
   };
 
@@ -40,22 +40,13 @@ const ProductDetails = () => {
     if (!reviewInput.trim()) return;
 
     try {
-      const res = await fetch(`http://localhost:5001/api/reviews`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          // Optionally add Auth header if needed
-        },
-        body: JSON.stringify({
-          productId: id,
-          rating: ratingInput,
-          comment: reviewInput,
-        }),
+      const res = await api.post(`/api/reviews`, {
+        productId: id,
+        rating: ratingInput,
+        comment: reviewInput,
       });
 
-      if (!res.ok) throw new Error("Failed to submit review");
-
-      const newReview = await res.json();
+      const newReview = res.data;
       setReviews([newReview, ...reviews]);
       setReviewInput("");
       setRatingInput(5);
@@ -70,20 +61,20 @@ const ProductDetails = () => {
 
   return (
     <div className="product-details-container">
-     <div className="product-images">
-  {product.images?.map((img, index) => (
-   <img
-   key={index}
-   src={`/assets/images/products/${img?.replace('../assets/images/products/', '')}`}
-   alt={`${product.name} ${index + 1}`}
-   onError={(e) => {
-     e.target.src = '/placeholder-product.png';
-   }}
- />
- 
-    
-  ))}
-</div>
+      <div className="product-images">
+        {product.images?.map((img, index) => (
+          <img
+            key={index}
+            src={`/assets/images/products/${img?.replace('../assets/images/products/', '')}`}
+            alt={`${product.name} ${index + 1}`}
+            onError={(e) => {
+              e.target.src = '/placeholder-product.png';
+            }}
+          />
+
+
+        ))}
+      </div>
 
 
       <div className="product-info">

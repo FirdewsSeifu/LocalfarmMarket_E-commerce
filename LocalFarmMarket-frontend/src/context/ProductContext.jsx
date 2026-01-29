@@ -1,4 +1,5 @@
 import { createContext, useState, useEffect, useContext } from 'react';
+import api from '../api';
 
 const ProductContext = createContext();
 
@@ -11,16 +12,12 @@ export const ProductProvider = ({ children }) => {
     const fetchData = async () => {
       try {
         const [productsRes, categoriesRes] = await Promise.all([
-          fetch('http://localhost:5001/api/products'),
-          fetch('http://localhost:5001/api/categories'),
+          api.get('/api/products'),
+          api.get('/api/categories'),
         ]);
 
-        if (!productsRes.ok || !categoriesRes.ok) {
-          throw new Error('Failed to fetch products or categories');
-        }
-
-        const productsData = await productsRes.json();
-        const categoriesData = await categoriesRes.json();
+        const productsData = productsRes.data;
+        const categoriesData = categoriesRes.data;
 
         setProducts(productsData);
         setCategories(categoriesData);
@@ -34,12 +31,8 @@ export const ProductProvider = ({ children }) => {
 
   const addProduct = async (product) => {
     try {
-      const res = await fetch('http://localhost:5001/api/products', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(product),
-      });
-      const newProduct = await res.json();
+      const res = await api.post('/api/products', product);
+      const newProduct = res.data;
       setProducts((prev) => [...prev, newProduct]);
       return newProduct;
     } catch (err) {
@@ -49,12 +42,8 @@ export const ProductProvider = ({ children }) => {
 
   const updateProduct = async (id, updatedProduct) => {
     try {
-      const res = await fetch(`http://localhost:5001/api/products/${id}`, {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(updatedProduct),
-      });
-      const data = await res.json();
+      const res = await api.put(`/api/products/${id}`, updatedProduct);
+      const data = res.data;
       setProducts((prev) =>
         prev.map((p) => (p._id === id ? data : p))
       );
@@ -65,9 +54,7 @@ export const ProductProvider = ({ children }) => {
 
   const deleteProduct = async (id) => {
     try {
-      await fetch(`http://localhost:5001/api/products/${id}`, {
-        method: 'DELETE',
-      });
+      await api.delete(`/api/products/${id}`);
       setProducts((prev) => prev.filter((p) => p._id !== id));
     } catch (err) {
       console.error('Error deleting product:', err);

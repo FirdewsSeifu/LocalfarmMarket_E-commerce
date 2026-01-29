@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
+import api from "../../api";
 import "../../styles/productList.css";
 
 const ProductList = () => {
@@ -19,13 +20,12 @@ const ProductList = () => {
         setLoading(true); // Set loading state to true while fetching
 
         // Fetch products
-        const productsRes = await fetch("http://localhost:5001/api/products");
-        if (!productsRes.ok) throw new Error("Failed to fetch products");
-        const productsData = await productsRes.json();
-      
-        
+        const response = await api.get("/api/products");
+        const productsData = response.data;
+
+
         setProducts(productsData);
-  
+
       } catch (err) {
         console.error("Error fetching data:", err);
       } finally {
@@ -75,20 +75,20 @@ const ProductList = () => {
           <option value="rating">Best Rating</option>
         </select>
 
-        
+
       </div>
 
       <div className="product-grid">
         {filteredProducts.length > 0 ? (
           filteredProducts.map((product) => (
             <div key={product._id} className="product-card">
-  <img
-  src={`/assets/images/products/${product.images?.[0]}`}
-  alt={product.name}
-  onError={(e) => {
-    e.target.src = '/placeholder-product.png';
-  }}
-/>
+              <img
+                src={`/assets/images/products/${product.images?.[0]}`}
+                alt={product.name}
+                onError={(e) => {
+                  e.target.src = '/placeholder-product.png';
+                }}
+              />
 
 
 
@@ -96,9 +96,9 @@ const ProductList = () => {
               <p className="price">{product.price.toLocaleString()} ETB</p>
               <p className="rating">⭐ {product.rating || "Not rated"}</p>
               <Link
-  to={`/product/${product._id}`}
-  className="details-btn"
->
+                to={`/product/${product._id}`}
+                className="details-btn"
+              >
                 View Details
               </Link>
             </div>
