@@ -1,0 +1,528 @@
+[
+  {
+    "name": "Artisan Bread",
+    "description": "Handcrafted rustic bread with a golden crust.",
+    "price": 257,
+    "currency": "ETB",
+    "categoryId": "6817e95a2974a6b9ad3c7ee1",
+    "images": ["artisan_bread.png"],
+    "stock": 50,
+    "rating": 4.8,
+    "specifications": {
+      "Type": "Sourdough",
+      "Weight": "500g"
+    },
+    "reviews": [
+      {
+        "user": "BreadLover",
+        "content": "Best bread I've ever tasted!",
+        "date": "2023-05-10T09:15:00Z"
+      }
+    ],
+    "createdAt": "2023-05-01T08:05:00Z"
+  },
+  {
+    "name": "Banana",
+    "description": "Sweet bananas rich in potassium and perfect for snacking.",
+    "price": 86,
+    "currency": "ETB",
+    "categoryId": "6817e95a2974a6b9ad3c7ee0",
+    "images": ["banana.png"],
+    "stock": 150,
+    "rating": 4.6,
+    "specifications": {
+      "Bunch Size": "6-7 bananas",
+      "Origin": "Local Farm"
+    },
+    "reviews": [
+      {
+        "user": "Sara Mohammed",
+        "content": "Fresh",
+        "date": "2023-05-21T09:30:00Z"
+      }
+    ],
+    "createdAt": "2023-05-02T07:30:00Z"
+  },
+  {
+    "name": "Barley",
+    "description": "Whole barley grains ideal for soups and stews.",
+    "price": 125,
+    "currency": "ETB",
+    "categoryId": "6817e95a2974a6b9ad3c7ee3",
+    "images": ["barley.jpeg"],
+    "stock": 75,
+    "rating": 4.3,
+    "specifications": {
+      "Weight": "1kg",
+      "Organic": "Yes"
+    },
+    "reviews": [
+      {
+        "user": "Home Cook",
+        "content": "Perfect for my homemade soup",
+        "date": "2023-05-12T16:20:00Z"
+      }
+    ],
+    "createdAt": "2023-05-02T08:15:00Z"
+  },
+  
+    {
+      "name": "Cilantro",
+      "description": "Fresh cilantro leaves for garnishing and flavor.",
+      "price": 63,
+      "currency": "ETB",
+      "categoryId": "6817e95a2974a6b9ad3c7ee2",
+      "images": ["cilantro.jpeg"],
+      "stock": 180,
+      "rating": 4.5,
+      "specifications": {
+        "Package Size": "Large bunch",
+        "Organic": "Yes"
+      },
+      "reviews": [
+        {
+          "user": "Alex Johnson",
+          "content": "Gives refreshing smell",
+          "date": "2023-05-21T09:30:00Z"
+        }
+      ],
+      "createdAt": "2023-05-08T07:30:00Z"
+    },
+    {
+      "name": "Cornmeal",
+      "description": "Fine cornmeal for baking or polenta.",
+      "price": 114,
+      "currency": "ETB",
+      "categoryId": "6817e95a2974a6b9ad3c7ee3",
+      "images": ["cornmeal.jpeg"],
+      "stock": 70,
+      "rating": 4.3,
+      "specifications": {
+        "Weight": "1kg",
+        "Type": "Fine grind"
+      },
+      "reviews": [
+        {
+          "user": "Alex Johnson",
+          "content": "Gives refreshing smell",
+          "date": "2023-05-21T09:30:00Z"
+        }
+      ],
+      "createdAt": "2023-05-08T09:15:00Z"
+    },
+    {
+      "name": "Cow Milk",
+      "description": "Freshly collected whole cow milk.",
+      "price": 103,
+      "currency": "ETB",
+      "categoryId": "6817e95a2974a6b9ad3c7ee6",
+      "images": ["cow_milk.jpeg"],
+      "stock": 130,
+      "rating": 4.7,
+      "specifications": {
+        "Volume": "1 liter",
+        "Fat Content": "3.5%"
+      },
+      "reviews": [
+        {
+          "user": "MilkDrinker",
+          "content": "Creamy and delicious",
+          "date": "2023-05-20T08:45:00Z"
+        }
+      ],
+      "createdAt": "2023-05-09T08:00:00Z"
+    },
+    {
+      "name": "Cream Cheese",
+      "description": "Rich and creamy cheese spread.",
+      "price": 165,
+      "currency": "ETB",
+      "categoryId": "6817e95a2974a6b9ad3c7ee6",
+      "images": ["cream_cheese.jpeg"],
+      "stock": 80,
+      "rating": 4.8,
+      "specifications": {
+        "Weight": "200g",
+        "Type": "Original"
+      },
+      "reviews": [],
+      "createdAt": "2023-05-09T09:30:00Z"
+    },
+    {
+      "name": "Cucumbers",
+      "description": "Cool, hydrating organic cucumbers.",
+      "price": 91,
+      "currency": "ETB",
+      "categoryId": "6817e95a2974a6b9ad3c7ee2",
+      "images": ["cucumbers.png"],
+      "stock": 100,
+      "rating": 4.6,
+      "specifications": {
+        "Size": "Medium",
+        "Organic": "Yes"
+      },
+      "reviews": [
+        {
+          "user": "Meron Abebe",
+          "content": "Fresh",
+          "date": "2023-05-21T09:30:00Z"
+        }
+      ],
+      "createdAt": "2023-05-10T07:45:00Z"
+    },
+    {
+      "name": "Daisies",
+      "description": "Charming white and yellow daisies.",
+      "price": 285,
+      "currency": "ETB",
+      "categoryId": "6817e95a2974a6b9ad3c7ee5",
+      "images": ["daisies.jpeg"],
+      "stock": 45,
+      "rating": 4.7,
+      "specifications": {
+        "Bundle Size": "15 stems",
+        "Vase Life": "7-10 days"
+      },
+      "reviews": [
+        {
+          "user": "FlowerEnthusiast",
+          "content": "Beautiful and fresh, great value",
+          "date": "2023-05-21T09:30:00Z"
+        }
+      ],
+      "createdAt": "2023-05-10T09:15:00Z"
+    },
+    {
+      "name": "Damakese (Spice)",
+      "description": "Aromatic traditional spice used in Ethiopian cooking.",
+      "price": 239,
+      "currency": "ETB",
+      "categoryId": "6817e95a2974a6b9ad3c7ee4",
+      "images": ["damakese.jpeg"],
+      "stock": 150,
+      "rating": 4.5,
+      "specifications": {
+        "Weight": "100g",
+        "Origin": "Ethiopia"
+      },
+      "reviews": [
+        {
+          "user": "SpiceMaster",
+          "content": "Authentic flavor, perfect for traditional dishes",
+          "date": "2023-05-22T14:15:00Z"
+        }
+      ],
+      "createdAt": "2023-05-11T08:00:00Z"
+    },
+    {
+      "name": "Eggplant",
+      "description": "Glossy eggplants for Mediterranean dishes.",
+      "price": 137,
+      "currency": "ETB",
+      "categoryId": "6817e95a2974a6b9ad3c7ee2",
+      "images": ["eggplant.png"],
+      "stock": 75,
+      "rating": 4.4,
+      "specifications": {
+        "Size": "Medium",
+        "Organic": "Yes"
+      },
+      "reviews": [
+        {
+          "user": "Meron Abebe",
+          "content": "Tasty when cooked fresh",
+          "date": "2023-05-23T12:30:00Z"
+        }
+      ],
+      "createdAt": "2023-05-11T09:30:00Z"
+    },
+    
+      {
+          "name": "Farm Scenery",
+          "description": "Beautiful photo of the countryside farm.",
+          "price": 0,
+          "currency": "ETB",
+          "categoryId": "6817e95a2974a6b9ad3c7ee8",
+          "images": ["farm.jpg"],
+          "stock": 999,
+          "rating": 0,
+          "specifications": {
+              "Type": "Wall Art",
+              "Size": "A3"
+          },
+          "reviews": [
+              {
+                  "user": "Sara Mohammed",
+                  "content": "Beautiful place to visit",
+                  "date": "2023-05-23T12:30:00Z"
+              }
+          ],
+          "createdAt": "2023-05-12T08:15:00Z"
+      },
+      {
+          "name": "Farm Landscape",
+          "description": "Peaceful farm view with golden fields.",
+          "price": 0,
+          "currency": "ETB",
+          "categoryId": "6817e95a2974a6b9ad3c7ee8",
+          "images": ["farm2.jpg"],
+          "stock": 999,
+          "rating": 0,
+          "specifications": {
+              "Type": "Wall Art",
+              "Size": "A3"
+          },
+          "reviews": [
+              {
+                  "user": "Sara Mohammed",
+                  "content": "Lovely place to visit",
+                  "date": "2023-05-23T12:30:00Z"
+              }
+          ],
+          "createdAt": "2023-05-12T09:45:00Z"
+      },
+      {
+          "name": "Fennel",
+          "description": "Crisp fennel bulbs with a hint of anise flavor.",
+          "price": 143,
+          "currency": "ETB",
+          "categoryId": "6817e95a2974a6b9ad3c7ee4",
+          "images": ["fennel.jpeg"],
+          "stock": 60,
+          "rating": 4.4,
+          "specifications": {
+              "Size": "Medium bulb",
+              "Organic": "Yes"
+          },
+          "reviews": [
+              {
+                  "user": "Home Cook",
+                  "content": "Makes you refreshing",
+                  "date": "2023-05-23T12:30:00Z"
+              }
+          ],
+          "createdAt": "2023-05-13T08:00:00Z"
+      },
+      {
+          "name": "Feta Cheese",
+          "description": "Tangy, crumbly feta cheese from goat milk.",
+          "price": 205,
+          "currency": "ETB",
+          "categoryId": "6817e95a2974a6b9ad3c7ee6",
+          "images": ["feta.jpeg"],
+          "stock": 65,
+          "rating": 4.8,
+          "specifications": {
+              "Weight": "200g",
+              "Type": "Traditional"
+          },
+          "reviews": [
+              {
+                  "user": "CheeseConnoisseur",
+                  "content": "Authentic flavor, perfect for salads",
+                  "date": "2023-05-23T12:30:00Z"
+              }
+          ],
+          "createdAt": "2023-05-13T09:30:00Z"
+      },
+      {
+          "name": "Fresh Berries",
+          "description": "Seasonal berries picked at peak ripeness.",
+          "price": 336,
+          "currency": "ETB",
+          "categoryId": "6817e95a2974a6b9ad3c7ee0",
+          "images": ["fresh_berries.png"],
+          "stock": 40,
+          "rating": 4.9,
+          "specifications": {
+              "Variety": "Mixed",
+              "Organic": "Yes"
+          },
+          "reviews": [
+              {
+                  "user": "BerryLover",
+                  "content": "Sweet and juicy, perfect for desserts",
+                  "date": "2023-05-24T10:15:00Z"
+              }
+          ],
+          "createdAt": "2023-05-14T07:45:00Z"
+      },
+      {
+          "name": "Fresh Goat Milk",
+          "description": "Creamy and nutritious local goat milk.",
+          "price": 177,
+          "currency": "ETB",
+          "categoryId": "6817e95a2974a6b9ad3c7ee6",
+          "images": ["fresh_goat_milk.jpeg"],
+          "stock": 55,
+          "rating": 4.7,
+          "specifications": {
+              "Volume": "1 liter",
+              "Fat Content": "4%"
+          },
+          "reviews": [
+              {
+                  "user": "Kaleb Girma",
+                  "content": "Tasty and refreshing",
+                  "date": "2023-05-25T16:45:00Z"
+              }
+          ],
+          "createdAt": "2023-05-14T09:15:00Z"
+      },
+      {
+          "name": "Fresh Herb Bundle",
+          "description": "A bundle of fresh local herbs.",
+          "price": 114,
+          "currency": "ETB",
+          "categoryId": "6817e95a2974a6b9ad3c7ee4",
+          "images": ["fresh_herb_bundle.png"],
+          "stock": 120,
+          "rating": 4.6,
+          "specifications": {
+              "Contents": "Parsley, Rosemary, Thyme",
+              "Organic": "Yes"
+          },
+          "reviews": [
+              {
+                  "user": "HomeCook",
+                  "content": "Great variety of fresh herbs",
+                  "date": "2023-05-25T16:45:00Z"
+              }
+          ],
+          "createdAt": "2023-05-15T08:00:00Z"
+      },
+      {
+          "name": "Goat Cheese",
+          "description": "Soft goat cheese with a mild tangy flavor.",
+          "price": 228,
+          "currency": "ETB",
+          "categoryId": "6817e95a2974a6b9ad3c7ee6",
+          "images": ["goat_cheese.jpeg"],
+          "stock": 70,
+          "rating": 4.8,
+          "specifications": {
+              "Weight": "150g",
+              "Type": "Soft"
+          },
+          "reviews": [
+              {
+                  "user": "Cheese Connoisseur",
+                  "content": "Sweet and perfect for snacking",
+                  "date": "2023-05-26T11:20:00Z"
+              }
+          ],
+          "createdAt": "2023-05-15T09:30:00Z"
+      },
+      {
+          "name": "Grapes",
+          "description": "Sweet and juicy organic grapes.",
+          "price": 200,
+          "currency": "ETB",
+          "categoryId": "6817e95a2974a6b9ad3c7ee0",
+          "images": ["grapes.png"],
+          "stock": 85,
+          "rating": 4.7,
+          "specifications": {
+              "Variety": "Red Seedless",
+              "Organic": "Yes"
+          },
+          "reviews": [
+              {
+                  "user": "FruitFanatic",
+                  "content": "Sweet and perfect for snacking",
+                  "date": "2023-05-26T11:20:00Z"
+              }
+          ],
+          "createdAt": "2023-05-16T07:45:00Z"
+      },
+      {
+          "name": "Greek Yogurt",
+          "description": "Thick Greek yogurt packed with protein.",
+          "price": 154,
+          "currency": "ETB",
+          "categoryId": "6817e95a2974a6b9ad3c7ee6",
+          "images": ["greek_yogurt.jpeg"],
+          "stock": 90,
+          "rating": 4.8,
+          "specifications": {
+              "Weight": "500g",
+              "Fat Content": "2%"
+          },
+          "reviews": [
+              {
+                  "user": "HealthNut",
+                  "content": "Creamy texture, great with honey",
+                  "date": "2023-05-27T09:15:00Z"
+              }
+          ],
+          "createdAt": "2023-05-16T09:15:00Z"
+      },
+      {
+          "name": "Handmade Jams",
+          "description": "Sweet and tangy jams made from real fruits.",
+          "price": 257,
+          "currency": "ETB",
+          "categoryId": "6817e95a2974a6b9ad3c7ee8",
+          "images": ["handmade_jams.png"],
+          "stock": 50,
+          "rating": 4.9,
+          "specifications": {
+              "Flavor": "Mixed Berry",
+              "Size": "250ml"
+          },
+          "reviews": [
+              {
+                  "user": "JamEnthusiast",
+                  "content": "Delicious on toast, not too sweet",
+                  "date": "2023-05-28T08:30:00Z"
+              }
+          ],
+          "createdAt": "2023-05-17T08:00:00Z"
+      },
+      {
+          "name": "Heritage Tomatoes",
+          "description": "Rich and colorful heirloom tomatoes.",
+          "price": 227,
+          "currency": "ETB",
+          "categoryId": "6817e95a2974a6b9ad3c7ee2",
+          "images": ["heritage_tomatoes.jpeg"],
+          "stock": 75,
+          "rating": 4.9,
+          "specifications": {
+              "Variety": "Mixed Heirloom",
+              "Organic": "Yes"
+          },
+          "reviews": [
+              {
+                  "user": "TomatoLover",
+                  "content": "Incredible flavor, worth every birr",
+                  "date": "2023-05-29T13:45:00Z"
+              }
+          ],
+          "createdAt": "2023-05-17T09:30:00Z"
+      },
+      {
+          "name": "Hydrangeas",
+          "description": "Full bloom hydrangeas in vibrant colors.",
+          "price": 485,
+          "currency": "ETB",
+          "categoryId": "6817e95a2974a6b9ad3c7ee5",
+          "images": ["hydrangeas.jpeg"],
+          "stock": 30,
+          "rating": 4.7,
+          "specifications": {
+              "Color": "Blue/Pink Mix",
+              "Vase Life": "10-14 days"
+          },
+          "reviews": [
+              {
+                  "user": "FlowerPower",
+    
+    "content": "Stunning centerpiece for my dining table",
+          "date": "2023-05-30T10:20:00Z"
+        }
+      ],
+      "createdAt": "2023-05-18T08:15:00Z"
+    }
+  ]
+  

@@ -1,0 +1,58 @@
+# src/docs/api-docs.yaml
+openapi: 3.0.0
+info:
+  title: Local Farm Market API
+  description: REST API for the local farm market platform
+  version: 1.0.0
+servers:
+  - url: http://localhost:5000/api
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+security:
+  - bearerAuth: []
+
+paths:
+  /auth/register:
+    post:
+      summary: Register a new user
+      tags: [Auth]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                email:
+                  type: string
+                password:
+                  type: string
+                role:
+                  type: string
+      responses:
+        "201":
+          description: User created
+
+  /auth/login:
+    post:
+      summary: Login user and return JWT
+      tags: [Auth]
+      responses:
+        "200":
+          description: Authenticated
+
+  /products:
+    get:
+      summary: Get all products
+      tags: [Products]
+      responses:
+        "200":
+          description: Success
